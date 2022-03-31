@@ -9,6 +9,7 @@ import UsAddress from './components/Contact/UsAddress'
 import BdAddress from './components/Contact/BdAddress'
 import Footer from './components/Footer/Footer'
 import NotFound from './components/NotFound/NotFound'
+import CoinDetails from './components/CoinDetails/CoinDetails'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Homepage></Homepage>}></Route>
         <Route path='/coins' element={<Coins></Coins>}></Route>
+        <Route path='/coin-details/:id' element={<CoinDetails></CoinDetails>}></Route>
         <Route path='/contact' element={<Contact></Contact>}>
           <Route path='bd-address' element={<BdAddress></BdAddress>}/>
           <Route path='us-address' element={<UsAddress></UsAddress>}/>
