@@ -19,7 +19,7 @@ const Coins = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-4 justify-items-center gap-4'>
                 {
-                    coins.map(coin=><CoinCard key={coin.id} coin={coin.name}></CoinCard>)
+                    coins.map(coin=><CoinCard key={coin.id} coin={coin}></CoinCard>)
                 }
 
             </div>
